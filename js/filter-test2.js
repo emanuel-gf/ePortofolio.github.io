@@ -3,69 +3,36 @@ function showContent(filter) {
     const embedContents = document.querySelectorAll('.embed-content');
     embedContents.forEach(div => {
         div.style.display = 'none';
-        // Remove any active modal states
-        const modals = div.querySelectorAll('.modal');
-        modals.forEach(modal => {
-            modal.classList.remove('show');
-            modal.style.display = 'none';
-        });
     });
   
-    // Remove active class from all buttons
-    const buttons = document.querySelectorAll('.btn-primary');
-    buttons.forEach(button => button.classList.remove('active'));
+    // Remove active class and btn-primary from all buttons
+    const buttons = document.querySelectorAll('.btn-group .btn');
+    buttons.forEach(button => {
+        button.classList.remove('active', 'btn-dark');
+        button.classList.add('btn-dark');
+    });
      
-    // Add active class to the clicked button
+    // Add active class and btn-primary to the clicked button
     const clickedButton = document.querySelector(`[data-filter="${filter}"]`);
     if (clickedButton) {
-        clickedButton.classList.add('active');
+        clickedButton.classList.add('active', 'btn-light');
+        clickedButton.classList.remove('btn-dark');
     }
-
+  
     // Show the selected embed content div based on the provided filter
     const selectedContent = document.getElementById(filter);
     if (selectedContent) {
         selectedContent.style.display = 'block';
-        
-        // Setup modal functionality for the selected content
-        const modalTriggers = selectedContent.querySelectorAll('[data-toggle="modal"]');
-        modalTriggers.forEach(trigger => {
-            trigger.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetModalId = this.getAttribute('data-target');
-                const modal = document.querySelector(targetModalId);
-                
-                if (modal) {
-                    // Show modal
-                    modal.classList.add('show');
-                    modal.style.display = 'block';
-                    
-                    // Add modal backdrop
-                    const backdrop = document.createElement('div');
-                    backdrop.classList.add('modal-backdrop', 'fade', 'show');
-                    document.body.appendChild(backdrop);
-                    
-                    // Close modal functionality
-                    const closeButtons = modal.querySelectorAll('[data-dismiss="modal"]');
-                    closeButtons.forEach(closeBtn => {
-                        closeBtn.addEventListener('click', function() {
-                            modal.classList.remove('show');
-                            modal.style.display = 'none';
-                            document.body.removeChild(backdrop);
-                        });
-                    });
-                }
-            });
-        });
     }
-}
-
-// Set default selection when page loads
-document.addEventListener('DOMContentLoaded', function() {
+  }
+  
+  // Set default selection when page loads
+  document.addEventListener('DOMContentLoaded', function() {
     // Initial content show
     showContent('gee');
     
     // Add click event listeners to all buttons
-    const buttons = document.querySelectorAll('.btn-primary');
+    const buttons = document.querySelectorAll('.btn-group .btn');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default anchor behavior
@@ -73,4 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
             showContent(filter);
         });
     });
-});
+  });

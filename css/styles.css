@@ -355,7 +355,9 @@ button:focus:not(:focus-visible) {
   padding: 10px;  /* Optional padding around content */
   transition: all 0.3s ease-in-out;  /* Smooth transition effect */
 }
-
+.embed-content.active {
+  display: block;
+}
 /* Optional styling when content is visible */
 .embed-content.show {
   display: block;
@@ -2858,15 +2860,15 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #3f3e46;
+  --bs-btn-bg: #19191a;
   --bs-btn-border-color: #160427;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #2a2b33;
   --bs-btn-hover-border-color: #370344;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #8e9cad;
-  --bs-btn-active-border-color: #f0eee9;
+  --bs-btn-active-bg: #262627;
+  --bs-btn-active-border-color: #e6e4e0;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #ffc800;
@@ -3536,7 +3538,7 @@ textarea.form-control-lg {
 .btn-group > .btn.active,
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:focus + .btn,
-.btn-group-vertical > .btn:hover,
+.btn-group-vertical > .btn:hover, 
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn.active {
@@ -10851,7 +10853,9 @@ body {
 p {
   line-height: 1.75;
 }
-
+.page-section-modified {
+  padding: 1rem 0;
+}
 .page-section {
   padding: 4rem 0;
 }
@@ -10958,8 +10962,8 @@ p {
   }
 }
 header.masthead {
-  padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/Arcgis_night_light.JPG");
@@ -10972,6 +10976,7 @@ header.masthead .masthead-subheading {
   font-size: 1.0rem;
   font-style: italic;
   line-height: 1.0rem;
+  margin-bottom: 0.05rem;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -10985,11 +10990,12 @@ header.masthead .custom-masthead-heading {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.0rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 0.5rem;
+  margin-top:0.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .custom-text {
-  margin-bottom: 25px;
+  margin-bottom: 8px;
   line-height: 1.5rem;
   text-align: justify;
   padding-left: 20px; /* Add space to the left */
@@ -11263,77 +11269,23 @@ header.masthead .custom-text {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
-}
-.team-member {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.team-member img {
-  width: 14rem;
-  height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
-}
-.team-member h4, .team-member .h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
 
 .img-brand {
   height: 2.75rem;
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #ffff;
 }
-section#contact .section-heading {
-  color: #fff;
+
+section#contact .container-modified {
+  background-color: rgba(37, 41, 40, 0.9);
+  padding: 0rem;
 }
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
+
+/* Remove the duplicate color property */
+section#contact .container-modified {
+  color: white; /* Correct way to set white color */
 }
 
 .footer {

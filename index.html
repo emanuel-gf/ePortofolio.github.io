@@ -16,14 +16,16 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- ARCGIS JS-->
-                             <!-- Add script to the <head> of your page to load the embeddable map component -->
+        <!-- Add script to the <head> of your page to load the embeddable map component -->
         <script type="module" src="https://js.arcgis.com/embeddable-components/4.31/arcgis-embeddable-components.esm.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo_Emanuel_teste.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fas fa-earth-americas text-white"></i>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -33,8 +35,8 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#frameworks">Frameworks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -45,21 +47,23 @@
             <div class="container">
               <div class="row">
                 <!-- Left side grid panel -->
-                <div class="col-md-4">
-                    <img src="assets/img/eu_2.jpg" alt="That is me, Emanuel" class="rounded-circle img-fluid border border-gray border-5 mb-4">
-                    <a class="btn btn-dark btn-social mx-2 mb-0" href="#!" aria-label="Emanuel Goulart Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2 mb-0" href="#!" aria-label="Emanuel Goulart GitHub"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2 mb-0" href="#!" aria-label="Emanuel Goulart LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a> 
+                <div class="col-md-4 mx-auto py-5">
+                    <img src="assets/img/eu_2.jpg" alt="That is me, Emanuel" class="rounded-circle img-fluid border border-gray border-5 mx-auto">
+                    <a class="btn btn-dark btn-social mx-2 pt-2 rounded-circle" href="#!" aria-label="Emanuel Goulart Twitter Profile"><i class="fab fa-twitter "></i></a>
+                    <a class="btn btn-dark btn-social mx-2 pt-2 rounded-circle" href="https://github.com/emanuel-gf" target="_blank" aria-label="Emanuel Goulart GitHub" rel="noopener noreferrer"><i class="fab fa-github" ></i></a>
+                    <a class="btn btn-dark btn-social mx-2 pt-2 rounded-circle" href="https://www.linkedin.com/in/emanuel-goulart" target="_blank" aria-label="Emanuel Goulart LinkedIn Profile" rel="noopener noreferrer"><i class="fab fa-linkedin-in" ></i></a> 
                 </div>
                 <!-- Right side grid panel -->
                 <div class="col-md-8">
-                  <div class="masthead-subheading">Welcome!</div>
-                  <div class="masthead-heading text-uppercase">Emanuel Goulart Farias</div>
+                  <div class="masthead-heading text-uppercase">Emanuel Goulart</div>
                   <div class="custom-masthead-heading"> Geodata Scientist | Environmental Engineer</div>
-                  <p class="custom-text">Your additional text goes here. This text will appear in the right side grid panel and doesn’t need special formatting. Lorem ipsus, lorem ipsus lorem ipsus lorem ipsus lorem ipsus lorem ipsus lorem ipsus lorem ipsus lorem ipsus lorem ipsus</p>
-                  <p class="custom-text"> Minha segunda parte de texto, muito blablabla vamo ve quale</p>
-                  <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                  <p class="custom-text"> <b>Welcome!! </b>I am a <a href="https://master-cde.eu/" target="_blanket" style="color: white;"> Copernicus Master's</a> student in <b>Digital Earth</b> and <b>GeoData Science</b> at <a href="https://www.plus.ac.at/"" target="_blanket" style="color: white;">PLUS</a>, Austria, and <a href="https://www.univ-ubs.fr/en/index.html" target="_blanket" style="color: white;">UBS</a>, France. I hold a degree in Sanitary and Environmental Engineering from <a href="https://en.ufsc.br/" target="_blanket" style="color: white;" >Federal University of Santa Catarina</a>, Brazil.</p>
+                  <p class="custom-text"> My current goals aims on leveraging <b>spatial data science</b> to drive <b>sustainability-focused</b> initiatives through <b>data-driven insights</b> and <b>nature-based solutions</b>. To achieve this, I specialize in cutting-edge techniques such as <b>remote sensing</b>, <B>spatial analysis</B>, <b>machine learning (ML)</b>, and <b>artificial intelligence (AI)</b>.</p>
+                  <p class="custom-text">My work includes creating frameworks and analyses to assist in <b>water network management</b>, <b>civil engineering projects</b>, and <b>environmental consultancy studies</b>. I am passionate about developing open-source tools that simplify and enhance <b>geospatial analysis</b>, making it disseminated to a wide audience.</p>
+                  <P class="custom-text">I am enthusiastic about collaborating with professionals who share a passion for geospatial analytics. <b>Let’s connect</b> to create meaningful, impactful solutions together. <br> <br> </P>
+                  <a class="btn btn-dark btn-lg text-uppercase py-2" href="#services">Tell Me More</a>
                 </div>
+               
               </div>
             </div>
         </header>
@@ -76,7 +80,9 @@
                             <i class="fas fa-earth-africa fa-stack-1x fa-lg fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Geospatial Data Analysis</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <li class="text-muted text-start text-break text-justify"> <b>Spatial Data Processing:</b> Extract insights from spatial datasets using analytical tools and techniques. PointClouds. </li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Multi-Criteria Decision Analysis:</b> Supporting decision-making processes through spatial analytics. Outcomes of dynamic-information from multi-temporal spatial data analysis.</li>
+                        <li class="text-muted text-start text-break text-justify">    <b>AI and ML integration:</b> Building models to forecast changes in environmental or urban systems. </li>
                     </div>
                     <div class="col-md-6">
                         <span class="fa-stack fa-4x">
@@ -84,24 +90,30 @@
                             <i class="fas fa-map-location-dot fa-lg fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Mapping Solutions</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                        <li class="text-muted text-start text-break text-justify"> <b>Insightful geo-visualizations:</b> Creating high-quality maps tailored to each client's needs. Topographic maps, Digital Elevation Models (DTM).</li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Interactive Web Maps:</b> Developing web-based maps and dashboards for real-time data visualization.</li>
+                        <li class="text-muted text-start text-break text-justify">  <b>Visualizations:</b>  Enhancing data storytelling with informative designs. </li>
+                       </div>
                     <div class="col-md-6">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-dark"></i>
                             <i class="fas fa-mountain-sun fa-lg fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Environmental Projects</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                        <li class="text-muted text-start text-break text-justify"> <B>Impact Assessment:</B> Conducing environmental impacts studies for proposes developments.</li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Restoration Planning:</b> Design strategies for ecological restaurations, water resilience and multipurpose landscapes.</li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Climate Change Adaptation:</b> Providing vulnerability assessments and adaptive measures for climate-resilient planning. </li>
+                        </div>
                     <div class="col-md-6">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-dark"></i>
                             <i class="fas fa-layer-group fa-lg fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Data Acquisition & Management</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                        <li class="text-muted text-start text-break text-justify"> <b>Field Collection:</b> Gathering high-quality field data using GPS and drones.</li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Database Management:</b> Setting up and maintaining geospatial databases.</li>
+                        <li class="text-muted text-start text-break text-justify"> <b>Remote Sensing Data Acquisition.</b> Leveraging satellite imagery, monitoring land cover, vegetation health, and environmental hazards in real-time.</li>
+                      </div>
                 </div>
             </div>
         </section>
@@ -117,14 +129,14 @@
                         <div class="project-filters">
                             <div class="btn-toolbar d-flex justify-content-center">
                                 <div class="btn-group flex-wrap">
-                                    <a href="#button-project" data-filter="gee" onclick="showContent('gee')" class="btn btn-primary btn-lg">Google Earth Engine</a>
-                                    <a href="#button-project" data-filter="arcgis" onclick="showContent('arcgis')" class="btn btn-primary btn-lg">ArcGIS</a>
-                                    <a href="#button-project" data-filter="geospatial" onclick="showContent('geospatial')" class="btn btn-primary btn-lg">Geospatial Analysis</a>
-                                    <a href="#button-project" data-filter="ml" onclick="showContent('ml')" class="btn btn-primary btn-lg">AI & Machine Learning</a>
-                                    <a href="#button-project" data-filter="data-analysis" onclick="showContent('data-analysis')" class="btn btn-primary btn-lg">Data Analysis</a>
-                                    <a href="#button-project" data-filter="visualization" onclick="showContent('visualization')" class="btn btn-primary btn-lg">Visualization</a>
-                                    <a href="#button-project" data-filter="dashboard" onclick="showContent('dashboard')" class="btn btn-primary btn-lg">Dashboard</a>
-                                    <a href="#button-project" data-filter="toolbox" onclick="showContent('toolbox')" class="btn btn-primary btn-lg">ToolBox and QGIS Plugin</a>
+                                    <a href="#button-project" data-filter="gee" onclick="showContent('gee')" class="btn btn-dark btn-lg">Google Earth Engine</a>
+                                    <a href="#button-project" data-filter="arcgis" onclick="showContent('arcgis')" class="btn btn-dark btn-lg">ArcGIS</a>
+                                    <a href="#button-project" data-filter="geospatial" onclick="showContent('geospatial')" class="btn btn-dark btn-lg">Geospatial Analysis</a>
+                                    <a href="#button-project" data-filter="data-analysis" onclick="showContent('data-analysis')" class="btn btn-dark btn-lg">Data Analysis</a>
+                                    <a href="#button-project" data-filter="ml" onclick="showContent('ml')" class="btn btn-dark btn-lg">AI & Machine Learning</a>
+                                    <a href="#button-project" data-filter="dashboard" onclick="showContent('dashboard')" class="btn btn-dark btn-lg">Dashboard</a>
+                                    <a href="#button-project" data-filter="visualization" onclick="showContent('visualization')" class="btn btn-dark btn-lg">Geovisualizations</a>
+                                    <a href="#button-project" data-filter="toolbox" onclick="showContent('toolbox')" class="btn btn-dark btn-lg">ToolBox and QGIS Plugin</a>
                                 </div>
                             </div>
                         </div>
@@ -136,29 +148,31 @@
                 <div id="gee" class="embed-content" style="display: none;">
                     <div class="col-12">
                         <h3 class="text-center mb-4">Google Earth Engine Applications</h3>
-                        <h5 class="text-center mb-4">Web-Application to visualize espectral index for remote sensing</h5>
+                        <h5 class="text-center mb-4">Web-Application to visualize monthly and annualy climatological data at any part of the world.</h5>
                     </div>
-                    <iframe src="https://emanuelgf.users.earthengine.app/view/spectral-index-app" width="100%" height="600" style="border: none;" allowfullscreen loading="lazy"></iframe>
+                    <iframe src="https://ee-emanuelgoulartf.projects.earthengine.app/view/climatological-data" width="100%" height="600" style="border: none;" allowfullscreen loading="lazy"></iframe>
                     <div class="col-12 mt-4">
-                        <p class="description">
-                            Interactive geospatial visualization powered by Kepler.gl, showing spatial patterns and relationships.
-                            <a href="#" class="text-primary">Download full report</a>
+                        <p class="fs-6">
+                            <small>Powered by Google Earth Engine.</small>
                         </p>
                         <p class="text-justify">
-                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
+                            This web app retrieves rainfall estimates from rain gauges and satellite observations throughout CHIRPS dataset. Evapotranspiration data is sourced from the MODIS dataset, a satellite-based Earth observation product that measures overall evapotranspiration using a spectroradiometer. The app is designed to assist in civil engineering projects by estimating monthly and annual rainfall and evapotranspiration flows for any geographic boundary worldwide.</p>
+                        <p class="text-justify">While there is ongoing debate regarding the accuracy of these datasets compared to in-situ measurements, as discussed <a href="https://www.sciencedirect.com/science/article/pii/S1474706522000778" target="_blanket">here</a>, the estimates provided by the app are quickly accessible. They offer a valuable starting point and enhance understanding of the water cycle in the area of interest.
                         </p>
                         <!-- Modal trigger button -->
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#GEEModal">Check more GEE applications</button>
-                        
-                        
-
-                       
+                        <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#GEEModal">Check more GEE applications</button>
                     </div>
                 </div>
                 <!--Embedding ARCGIS-->
                 <div id="arcgis" class="embed-content" style="display: none;">
                     <div class="col-12">
                         <h3 class="text-center mb-4">Dublin's bike theft</h3>
+                        <p class="text-align">Dublin has been improving its cycle lanes over the last few years. The quays of the River Liffey are receiving more preferential and exclusive cycle bike lanes due to the increasing demand from bikers and the pressure to become a greener city with zero carbon footprint. Additionally, shared bike schemes are available options for commuting in and around Dublin city. However, aside from infrastructure challenges, the city faces a lack of safety for bike owners. The number of bike thefts is rising, with more than <a href="https://www.independent.ie/regionals/dublin/dublin-news/over-2100-bikes-stolen-in-dublin-in-first-eight-months-of-last-year/a1024893579.html" target="_blanket">3,000 bikes stolen in the first half of 2023</a>. 
+                            Dublin Bikes' campaign has been gathering information from bike users to improve mobility and has launched a database with the geolocations of bike thefts in the city.
+                           <br> 
+                           I used the dataset provided by <a href="https://www.dublincycling.com/" target="_blanket">Dublin Cycling Campaign</a> 
+                           to analyze the hotspots of thefts in the city during 2023, with more than nine hundred bike thefts registered.
+                        </p>
                     </div>
 
                     <!-- Add custom element to <body> of your page -->
@@ -167,8 +181,7 @@
                     </div>
                     <div class="col-12 mt-4">
                         <p class="description">
-                            Interactive geospatial visualization powered by Kepler.gl, showing spatial patterns and relationships.
-                            <a href="#" class="text-primary">Download full report</a>
+                            Powered by ESRI.
                         </p>
                     </div>
                 </div>
@@ -177,18 +190,30 @@
                     <div class="col-12">
                         <h6></h6>
                         <h2 class="text-center mb-4" > Analysis of Airbnb in Mallorca - Spain </h2>
+                        <p class="text-justify">Mallorca's Airbnb spatial analysis unveils the strategic distribution of short-term rentals across the island, mapping their concentration in urban centers and coastal zones. 
+                            These properties have been reshaping the housing landscape, significantly driving up local housing costs and forcing native residents out of their traditional neighborhoods. The stark economic transformation echoes the poignant question raised by <a href="https://www.majorcadailybulletin.com/news/local/2024/01/18/120493/palma-mallorca-will-any-neighbourhood-without-gentrification.html" target="_blanket"> Majorca Daily Bulletin:</a>:
+                            <i>"Will there be any neighbourhood left without gentrification?"</i>.  With Airbnb rates substantially exceeding local rental prices, the tourism-driven market threatens the island's social fabric.
+                            <br>This complex phenomenon not only generates substantial tourism revenue but also challenges Mallorca's long-term community sustainability, underscoring the urgent need for balanced regulatory interventions and community dialogue.
+                            </p>
                     </div>
                     <iframe src="assets/kepler.gl_.html" width="100%" height="600" style="border: none;" allowfullscreen loading="lazy"></iframe>
                     <div class="col-12 mt-4">
                         <p class="description">
-                            Interactive geospatial visualization powered by Kepler.gl, showing spatial patterns and relationships.
-                            <a href="#" class="text-primary">Download full report</a>
+                            Interactive geospatial visualization powered by Kepler gl. Data is sourced from <a href="https://insideairbnb.com/get-the-data/"> Inside Airbnb</a>.
                         </p>
                     </div>
                 </div>
                 <!--Embedding MACHINE LEARNING-->
                 <div id="ml" class="embed-content" style="display: none;">
-                    <iframe src="YOUR_ML_EMBED_LINK" width="100%" height="400" allowfullscreen></iframe>
+                    <div class="col-12 d-flex d-flex justify-content-center align-items-center">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-thumbnail" 
+                                 src="assets/img/logos/maintenance.png" 
+                                 alt="Maintenance Image" 
+                                 style="width: 300px; height: 168px; object-fit: cover;">
+                            <figcaption class="figure-caption text-center">In Maintenance...</figcaption>
+                        </figure>
+                    </div>
                 </div>
                 <!--Embedding DATA ANALYSIS-->
                 <div id="data-analysis" class="embed-content" style="display: none;">
@@ -197,7 +222,8 @@
                 <!--Embedding VISUALIZATION-->
                 <div id="visualization" class="embed-content" style="display: none; text-align: center;">
                     <div class="col-12">
-                        <h1 class="text-left mb-4 mx-2">Mapping solutions and geovisualizations</h1>
+                        <h4 class="text-left my-4 mx-2">Mapping solutions and geovisualizations</h4>
+                        <h5 class="text-left"> <b>3D visualization of Ireland's Land Cover and Land Use</b></h5>
                         <iframe src="assets/img/about/teste4-ireland.png" 
                                 style="border: none; display: block; margin: 0 auto;" 
                                 width="60%" 
@@ -205,7 +231,9 @@
                                 allowfullscreen 
                                 loading="lazy"></iframe>
                         <h1><br></h1>
-                        <iframe src="assets\img\about\switzerland-river3.png" 
+                        <h5> <b>3D visualization of Switzerland's Rivers Network.</b></h5>
+                        <iframe src="assets\img\about\switzerland-river3.png"
+                                class="mx-auto" 
                                 style="border: none; display: block; margin: 0 auto;" 
                                 width="85%" 
                                 height="495" 
@@ -213,14 +241,33 @@
                                 loading="lazy"></iframe>
                         <!-- Modal trigger button -->
                         <h1><br></h1>
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#MAPPINGModal">Check for more MapViz</button>
-                        
+                        <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#MappingModal">Check more geovisualizations!</button>
                     </div>
 
                 </div>
+                <!--Embedding DASHBOARD-->
+                <div id="dashboard" class="embed-content" style="display: none;">
+                    <div class="col-12 d-flex d-flex justify-content-center align-items-center">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-thumbnail" 
+                                 src="assets/img/logos/maintenance.png" 
+                                 alt="Maintenance Image" 
+                                 style="width: 300px; height: 168px; object-fit: cover;">
+                            <figcaption class="figure-caption text-center">In Maintenance...</figcaption>
+                        </figure>
+                    </div>
+                </div>
                 <!--Embedding TOOLBOX-->
-                <div id="teaching" class="embed-content" style="display: none;">
-                    <iframe src="YOUR_TEACHING_EMBED_LINK" width="100%" height="400" allowfullscreen></iframe>
+                <div id="toolbox" class="embed-content" style="display: none;">
+                    <div class="col-12 d-flex d-flex justify-content-center align-items-center">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-thumbnail" 
+                                    src="assets/img/logos/maintenance.png" 
+                                    alt="Maintenance Image" 
+                                    style="width: 300px; height: 168px; object-fit: cover;">
+                            <figcaption class="figure-caption text-center">In Maintenance...</figcaption>
+                        </figure>
+                    </div>
                 </div>
                 
         </section>
@@ -229,7 +276,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Frameworks </h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <iframe  width="100%" height="600" style="border: none;" src="https://embed.figma.com/proto/qWNLpVLcyG7GA3QOXOh6rz/Framework_logos?node-id=1-3&node-type=frame&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen loading="lazy"></iframe>
                 <p class="description">
@@ -240,14 +287,19 @@
         <!--BLOG - UPDATES - SATELLITE IMAGERY -->
         <section class="page-section bg-light" id="blog">
             <div class="container">
-                <div class="jumbotron p-2 p-md-5 text-white rounded bg-dark">
-                    <div class="col-md-12 px-0">
-                      <h1 class="display-4 font-italic">Valencia flood disaster</h1>
-                      <p class="lead my-3">On the 29 October, Valencia received a year's worth of rain in just 8 hours. This deluge caused several flash floods. These images were acquired from Sentinel-2 satellite and illustrate the scale of the disaster, with images from the median compositian of the october and the acquisited image on 31 October.</p>
-                      <iframe src="https://ee-emanuelgoulartf.projects.earthengine.app/view/valencia-floods" width="100%" height="600" style="border: none;" allowfullscreen loading="lazy"></iframe>
-                      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                <div class="text-left">
+                    <h2 class="section-heading text-uppercase">Blog :</h2>
+                    <div class="container">
+                        <div class="jumbotron p-2 p-md-5 text-white rounded bg-dark">
+                            <div class="col-md-12 px-0">
+                            <h1 class="display-4 font-italic">Valencia flood disaster</h1>
+                            <p class="lead my-3">On the 29 October, Valencia received a year's worth of rain in just 8 hours. This deluge caused several flash floods. These images were acquired from Sentinel-2 satellite and illustrate the scale of the disaster, with images from the median compositian of the october and the acquisited image on 31 October.</p>
+                            <iframe src="https://ee-emanuelgoulartf.projects.earthengine.app/view/valencia-floods" width="100%" height="600" style="border: none;" allowfullscreen loading="lazy"></iframe>
+                            <p class="lead mb-0"><a href="#blog" class="text-white font-weight-bold">Continue reading...</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>   
         <!-- About-->
@@ -256,7 +308,7 @@
             <div class="container pb-1">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h5 class="section-subheading text-muted">Short Curriculum.</h5>
                 </div>
                 <div class="container py-5 pt-0">
                     <div class="main-timeline">
@@ -264,10 +316,10 @@
                         <div class="card">
                           <div class="card-body p-4">
                             <h5>Geodata Science and Digital Earth Master</h5>
-                            <p><strong> Copernicus Master Joint in Digital Earth <br> Geodata Science specialization</strong> | Sep/2024 - onwards</p>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-                              dignissim per, habeo iusto primis ea eam.</p>
+                            <p><strong> Copernicus Master Joint in Digital Earth <br> Geodata Science specialization</strong> </p>
+                            <p class="mb-0">Leveraging spatial data analisys throughout cutting-edge frameworks. Computer-vision with <b>Pytorch</b>. <b>Advanced Remote Sensing</b> analysis with data cubes (XArray), <b>Lidar</b> data and <b>PointCloud</b>. 
+                                <b>Copernicus Ecossytem</b> for Earth Observation. <b>Radar data</b>. Big Earth data concepts. <b>Spatial-relational databases</b>.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -275,10 +327,10 @@
                         <div class="card">
                           <div class="card-body p-4">
                             <h5>Environmental Engineer</h5>
-                            <p><strong> Casagrande Engineering LTDA. | Jan/2024 - Mar/2024</strong></p>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-                              dignissim per, habeo iusto primis ea eam.</p>
+                            <p><strong> Casagrande Engineering</strong></p>
+                            <p class="mb-0"> <b>Automated computational methods</b> for hydraulic and sewage system project calculations.
+                                Designed and projected innovative <b>nature-based solutions</b> for wastewater treatment and agricultural field optimization
+                                </p>
                           </div>
                         </div>
                       </div>
@@ -286,10 +338,12 @@
                         <div class="card">
                           <div class="card-body p-4">
                             <h5>Environmental Data Analyst</h5>
-                            <p><strong> Freelancer | Apr/2023 - Dez/2023 </strong></p>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-                              dignissim per, habeo iusto primis ea eam.</p>
+                            <p><strong> Freelancer </strong></p>
+                            <p class="mb-0">Developed Google Earth Engine applications for advanced geospatial analysis and remote sensing. 
+                                Implemented scripts for <b>spatial and meteorological data acquisition</b> using Python.
+                                Created interactive data visualizations with Plotly and Matplotlib.
+                                Generated advanced <b>3D mapping plots</b> using cutting-edge R frameworks applied to land-use land cover classification.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -297,10 +351,10 @@
                         <div class="card">
                           <div class="card-body p-4">    
                             <h5>Data Management and Analysis Team</h5>
-                            <p><strong> Water Services and Technologies | Oct/2021 - Mar/2023</strong></p>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-                              dignissim per, habeo iusto primis ea eam.</p>
+                            <p><strong> Water Services and Technologies</strong></p>
+                            <p class="mb-0">Developed <b>desktop applications</b> for enhanced data reporting and visualization using Python, JavaScript and DB integration. 
+                                Built up comprehensive <b>database solutions</b> and queries using SQL SSMS, PgAdmin and PostgreSQL, with competence of relational models and spatial database management. 
+                                </p>
                           </div>
                         </div>
                       </div>
@@ -308,10 +362,10 @@
                         <div class="card">
                           <div class="card-body p-4">
                             <h5>Sanitary and Environmental Engineering</h5>
-                            <p><strong> Federal University of Santa Catarina - Brazil | 2016-2022</strong></p>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-                              dignissim per, habeo iusto primis ea eam.</p>
+                            <p><strong> Federal University of Santa Catarina - Brazil</strong></p>
+                            <p class="mb-0">Developed <b>artificial neural network</b> (ANN) using Keras and TensorFlow. Performed <b>Principal Component Analysis</b> (PCA) and linear transformations for data optimization.
+                                Developed Python scripts for raster data manipulation and chlorophyll concentration analysis.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -335,256 +389,143 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <section class="page-section-modified " id="contact">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="container-modified text-center p-4">
+                        <h2 class="text-uppercase">Contact Me!</h2>
+                        <li class="d-flex justify-content-center mb-3">
+                            <i class="fa-solid fa-envelope fa-2x me-3"></i>
+                            <a>emanuel.goulart-farias@stud.plus.ac.at</a>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center mb-3">
+                            <i class="fa-brands fa-github-alt fa-2x me-3"></i>
+                            <a href="https://github.com/emanuel-gf" target="_blank" style="color:white" rel="noopener noreferrer">github.com/emanuel-goulart</a>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-linkedin fa-2x me-3"></i>
+                            <a href="https://www.linkedin.com/in/emanuel-goulart" target="_blank" style="color:white" rel="noopener noreferrer">linkedin/in/emanuel-goulart</a>
+                        </li>
+                    </div>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
             </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
+                    <div class="col-lg-6 text-lg-start">Copyright &copy; Emanuel G.</div>
+                    <!-- <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
+                    </div> -->
+                    <div class="col-lg-6 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- MODALS -->
-         <!-- Modal -->
-         <div id="GEEModal" class="modal fade" role="dialog">
+         <!------------------------- Modal -------------------------------------------->
+         <div class="modal fade" id="MappingModal" tabindex="-1" aria-labelledby="GEEModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h6 class="modal-title">Google Earth Engine</h6>
+                        <h5 class="modal-title" id="GEEModalLabel">Geovisulizations</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <!-- Your modal content here -->
                         <div class="container">
-                            <h1 class="jumbotron-fluid">Album example</h1>
-                            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                            <h1 class="jumbotron-fluid">Cartography</h1>
+                            <p class="lead text-muted">Collection of cartography and geovisualizations.</p>
                         </div>
                         <div class="album py-5 bg-light">
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top"  src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top" src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top"  src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
+                            <!-- Your album content -->
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="MAPPINGModal" class="modal fade" role="dialog">
+        <div class="modal fade" id="GEEModal" tabindex="-1" aria-labelledby="GEEModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h6 class="modal-title">Mapping and Visualizations</h6>
+                        <h5 class="modal-title" id="GEEModalLabel">Google Earth Engine</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <!-- Your modal content here -->
                         <div class="container">
-                            <h1 class="jumbotron-fluid">Album example</h1>
-                            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                            <h1 class="jumbotron-fluid">GEE geo-applications</h1>
+                            <p class="lead text-muted">Several and useful applications based on remote sensing and earth observation.</p>
                         </div>
                         <div class="album py-5 bg-light">
                             <div class="container">
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top"  src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                          </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="card mb-4 box-shadow">
+                                      <img class="card-img-top"  src="assets\img\logos\ndvi.jpg" alt="Card image cap">
+                                      <div class="card-body">
+                                        <p class="card-text"> <a href="https://emanuelgf.users.earthengine.app/view/spectral-index-app" target="_blanket" style="color: rgb(14, 12, 12);"> <b>Spectral Index</b></a></p>
+                                        <p class="card-text">The <b>Spectral Index geo-app</b> aims to leveraging the monthly and annualy composes of the most well-knowing remote sensing index. Such as Normalized Difference Vegetation index (NDVI), Normalized Difference Water Index (NDWI).</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://emanuelgf.users.earthengine.app/view/spectral-index-app" target="_blanket">View</a> </button>
+                                            </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top" src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                         </div>
+                                  <div class="col-md-4">
+                                    <div class="card mb-4 box-shadow">
+                                      <img class="card-img-top" src="assets\img\logos\contour-lines.png" alt="Card image cap">
+                                      <div class="card-body">
+                                        <p class="card-text"> <a href="https://ee-emanuelgoulartf.projects.earthengine.app/view/m-contour-lines" target="_blanket" style="color: rgb(14, 12, 12);"> <b>Contour Lines Generator</b></a></p>
+                                        <p class="card-text">The <b>Contour Lines geo-app</b> creates 10-meters contour lines using interpolation of Digital Elevation Models (DEM) over the area of interest. The dataset is sourced from USGS.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://ee-emanuelgoulartf.projects.earthengine.app/view/m-contour-lines" target="_blanket">View</a> </button>
+                                            </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top"  src="assets/img/logos/gee.png" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                          </div>
+                                  <div class="col-md-4">
+                                    <div class="card mb-4 box-shadow">
+                                      <img class="card-img-top"  src="assets/img/logos/gee.png" alt="Card image cap">
+                                      <div class="card-body">
+                                        <p class="card-text">Maintanance.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                            </div>
+                              </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+        
+          <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap 5 JavaScript (with Popper.js) -->    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
@@ -595,6 +536,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
+          
     </body>
 </html>
