@@ -33,8 +33,15 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#frameworks">Frameworks</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#Project-Portfolio" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/project-portfolio.html">All Projects</a></li>
+                                <li><a class="dropdown-item" href="pages/cde-project-portfolio.html">CDE Projects</a></li>
+                            </ul>
+                        </li> 
                         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -68,53 +75,41 @@
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section bg-light" id="services">
+        <section class="page-section bg-light" id="Project-Portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h2 class="section-heading text-uppercase">Projects Portfolio</h2>
                 </div>
-                <div class="row text-center">
+                <div class="row mb-2">
                     <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fas fa-earth-africa fa-stack-1x fa-lg fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Geospatial Data Analysis</h4>
-                        <li class="text-muted text-start text-break text-justify"> <b>Spatial Data Processing:</b> Extract insights from spatial datasets using analytical tools and techniques. PointClouds. </li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Multi-Criteria Decision Analysis:</b> Support decision-making processes through spatial analytics. Outcomes of dynamic-information from multi-temporal spatial data analysis.</li>
-                        <li class="text-muted text-start text-break text-justify">    <b>AI and ML integration:</b> Build models to forecast changes in environmental or urban systems. </li>
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <strong class="d-inline-block mb-2 text-primary">Services Related</strong>
+                          <h3 class="mb-0">
+                            <a class="text-dark" href="#">Projects</a>
+                          </h3>
+                          <p class="card-text mb-auto">Assembly of personal projects
+                            related to <b>geospatial intelligence</b>, <b>remote sensing</b>, <b>environmental engineering</b> and 
+                            <b>nature-based solutions</b>.</p>
+                          <a class="btn btn-link btn-light" href="pages/project-portfolio.html" role="button">Full Projects</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_195751c869b%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_195751c869b%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                      </div>
                     </div>
                     <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fas fa-map-location-dot fa-lg fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Mapping Solutions</h4>
-                        <li class="text-muted text-start text-break text-justify"> <b>Insightful geo-visualizations:</b> Create high-quality maps tailored to each client's needs. Topographic maps, Digital Elevation Models (DTM).</li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Interactive Web Maps:</b> Develop web-based maps and dashboards for real-time data visualization.</li>
-                        <li class="text-muted text-start text-break text-justify">  <b>Visualizations:</b>  Enhance data storytelling with informative designs. </li>
-                       </div>
-                    <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fas fa-mountain-sun fa-lg fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Environmental Projects</h4>
-                        <li class="text-muted text-start text-break text-justify"> <B>Impact Assessment:</B> Conduce environmental impacts studies for proposed developments.</li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Restoration Planning:</b> Design strategies for ecological restaurations, water resilience and multipurpose landscapes.</li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Climate Change Adaptation:</b> Provide vulnerability assessments and adaptive measures for climate-resilient planning. </li>
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <strong class="d-inline-block mb-2 text-success">CDE Master</strong>
+                          <h3 class="mb-0">
+                            <a class="text-dark" href="https://master-cde.eu/" target="_blank" >CDE Projects</a>
+                          </h3>
+                          <p class="card-text mb-auto">This page is dedicated to Copernicus Master in Digital Earth & GeoData Science projects and assignments.</p>
+                          <a class="btn btn-link btn-light" href="#" role="button"> Check CDE projects</a>
                         </div>
-                    <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fas fa-layer-group fa-lg fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Data Acquisition & Management</h4>
-                        <li class="text-muted text-start text-break text-justify"> <b>Field Collection:</b> Gather high-quality field data using GPS and drones.</li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Database Management:</b> Set up and maintaining geospatial databases.</li>
-                        <li class="text-muted text-start text-break text-justify"> <b>Remote Sensing Data Acquisition.</b> Leverage satellite imagery, monitoring land cover, vegetation health, and environmental hazards in real-time.</li>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_195751c869e%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_195751c869e%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
                       </div>
-                </div>
+                    </div>
+                  </div>
             </div>
         </section>
         <!--Projects -->
